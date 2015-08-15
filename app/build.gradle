@@ -6,7 +6,7 @@ model {
         buildToolsVersion = "22.0.1"
 
         defaultConfig.with {
-            applicationId = "za.co.roshuis.libjpeg"
+            applicationId = "za.co.roshuis.ndk"
             minSdkVersion.apiLevel = 15
             targetSdkVersion.apiLevel = 22
             versionCode = 1
@@ -20,17 +20,7 @@ model {
         }
     }
     android.ndk {
-        moduleName = "libjpeg"
-    }
-    // Configures source set directory.
-    android.sources {
-        main {
-            java {
-                source {
-                    srcDir 'src'
-                }
-            }
-        }
+        moduleName = "native"
     }
 }
 
