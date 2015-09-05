@@ -21,6 +21,7 @@ model {
     }
     android.ndk {
         moduleName = "native"
+        ldLibs += "GLESv2"
     }
 }
 
